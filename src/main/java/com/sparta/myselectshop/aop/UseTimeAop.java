@@ -36,7 +36,7 @@ public class UseTimeAop {
 
         try {
             // 핵심기능 수행
-            Object output = joinPoint.proceed();
+            Object output = joinPoint.proceed(); // Around 때문에 수행
             return output;
         } finally {
             // 측정 종료 시간
